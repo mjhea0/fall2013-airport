@@ -8,11 +8,11 @@ var express = require('express')
   , http = require('http')
   , path = require('path')
   , _ = require('underscore')
-  , Airport = require('./models/airport.js')
-  , Person = require('./models/person.js')
-  , Passenger = require('./models/passenger.js')
-  , Crew = require('./models/crew.js')
-  , Plane = require('./models/plane.js')
+  , Airport = require('./models/lib/airport.js')
+  , Person = require('./models/lib/person.js')
+  , Passenger = require('./models/lib/passenger.js')
+  , Crew = require('./models/lib/crew.js')
+  , Plane = require('./models/lib/plane.js')
 
 var app = express();
 
