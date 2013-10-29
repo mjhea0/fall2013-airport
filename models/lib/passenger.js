@@ -9,11 +9,11 @@
   Passenger = (function(_super) {
     __extends(Passenger, _super);
 
-    function Passenger(destination, name, age, weight) {
-      this.destination = destination;
+    function Passenger(name, age, weight, destination) {
       this.name = name;
       this.age = age;
       this.weight = weight;
+      this.destination = destination;
       Passenger.__super__.constructor.call(this, this.name, this.age, this.weight);
     }
 

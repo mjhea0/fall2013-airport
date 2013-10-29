@@ -17,7 +17,7 @@ var express = require('express')
 var app = express();
 
 // all environments
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 4000);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 app.use(express.favicon());
@@ -99,6 +99,7 @@ app.post('/board', function(req, res) {
 	// 1. get the airport object of the origin
 	// 2. get the airport object of the destination
 	var origin = airports[req.body.origin];
+	console.log(req.body.origin)
 	var destination = airports[req.body.destination];
 
 	// 3. get plane object with given id

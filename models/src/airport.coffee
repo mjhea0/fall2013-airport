@@ -1,5 +1,5 @@
 class Airport
-	constructor:(@code, @city, @travelers = [], @planes = []) ->
+	constructor:(@city, @code, @travelers = [], @planes = []) ->
 
 module.exports = Airport
 

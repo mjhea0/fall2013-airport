@@ -1,4 +1,5 @@
 class Plane 
-	constructor:(@id = counter++, @name, @seats, @weightCapacity, @fuelCapacity, @fuelLevel, @passengers = [], @crew = []) ->
+	constructor:(@name, @seats, @weightCapacity, @fuelCapacity, @fuelLevel, @passengers = [], @crew = []) ->
+		@id = counter++
 counter = 0
 module.exports = Plane

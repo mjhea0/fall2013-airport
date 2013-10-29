@@ -1,7 +1,7 @@
 Person = require("./person")
 
 class Passenger extends Person 
-  constructor:(@destination, @name, @age, @weight) ->
+  constructor:(@name, @age, @weight, @destination) ->
   	super(@name, @age, @weight)
 
 module.exports = Passenger

@@ -3,9 +3,9 @@
   var Airport;
 
   Airport = (function() {
-    function Airport(code, city, travelers, planes) {
-      this.code = code;
+    function Airport(city, code, travelers, planes) {
       this.city = city;
+      this.code = code;
       this.travelers = travelers != null ? travelers : [];
       this.planes = planes != null ? planes : [];
     }
